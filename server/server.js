@@ -78,8 +78,14 @@ wss.on("connection", (ws) => {
 
         const playBackState = await spotifyApi.getMyCurrentPlaybackState();
         const status = playBackState.body.is_playing ? "playing" : "paused";
+        const title = playBackState.body.item?.name || "Unknown Song";
+        const albumCover = playBackState.body.item?.album?.images[0]?.url || "";
+        const artists =
+          playBackState.body.item?.artists
+            ?.map((artist) => artist.name)
+            .join(", ") || "Unknown Artist";
 
-        ws.send(JSON.stringify({ status }));
+        ws.send(JSON.stringify({ status, title, albumCover, artists }));
       } catch (error) {
         console.error("Error pausing", error.body || error);
       }
@@ -90,8 +96,14 @@ wss.on("connection", (ws) => {
 
         const playBackState = await spotifyApi.getMyCurrentPlaybackState();
         const status = playBackState.body.is_playing ? "playing" : "paused";
+        const title = playBackState.body.item?.name || "Unknown Song";
+        const albumCover = playBackState.body.item?.album?.images[0]?.url || "";
+        const artists =
+          playBackState.body.item?.artists
+            ?.map((artist) => artist.name)
+            .join(", ") || "Unknown Artist";
 
-        ws.send(JSON.stringify({ status }));
+        ws.send(JSON.stringify({ status, title, albumCover, artists }));
       } catch (error) {
         console.error("Error playing", error.body || error);
       }
@@ -102,8 +114,14 @@ wss.on("connection", (ws) => {
 
         const playBackState = await spotifyApi.getMyCurrentPlaybackState();
         const status = playBackState.body.is_playing ? "playing" : "paused";
+        const title = playBackState.body.item?.name || "Unknown Song";
+        const albumCover = playBackState.body.item?.album?.images[0]?.url || "";
+        const artists =
+          playBackState.body.item?.artists
+            ?.map((artist) => artist.name)
+            .join(", ") || "Unknown Artist";
 
-        ws.send(JSON.stringify({ status }));
+        ws.send(JSON.stringify({ status, title, albumCover, artists }));
       } catch (error) {
         console.error("Error forwarding", error.body || error);
       }
@@ -114,8 +132,14 @@ wss.on("connection", (ws) => {
 
         const playBackState = await spotifyApi.getMyCurrentPlaybackState();
         const status = playBackState.body.is_playing ? "playing" : "paused";
+        const title = playBackState.body.item?.name || "Unknown Song";
+        const albumCover = playBackState.body.item?.album?.images[0]?.url || "";
+        const artists =
+          playBackState.body.item?.artists
+            ?.map((artist) => artist.name)
+            .join(", ") || "Unknown Artist";
 
-        ws.send(JSON.stringify({ status }));
+        ws.send(JSON.stringify({ status, title, albumCover, artists }));
       } catch (error) {
         console.error("Error backwarding", error.body || error);
       }
