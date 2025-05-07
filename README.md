@@ -15,12 +15,12 @@ Spotify Remote is a school project. For this project I had to build a remote con
 1. Front-end (`/react`)
 
    - A front-end application built using React and Tailwind CSS.
-   - Able to connect with the WebSocket server.
+   - Where the WebSocket server is set up, updating the content in real-time.
+   - The WebSocket servers as a bridge between the front-end and the Spotify API.
 
 2. API (`/server`)
 
-   - Handles the WebSocket server.
-   - Updates in real-time, connecting the front-end with the official Spotify API through the WebSocket server.
+   - Handles the connection to the official Spotify API.
      
 
 ## Author(s)
