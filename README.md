@@ -10,23 +10,18 @@
 
 ## Overview
 
-This portfolio was built as a personal project of mine. I use it for school and to showcase my work, skills, and additional information about myself to companies and clients.
+Spotify Remote is a school project. For this project I had to build a remote controller using WebSockets. With this, you are able to control your Spotify app on your phone or laptop by using the controls visible on the website. Because of WebSockets, Spotify gets updated in real-time and you will be able to see the album covers and artists among other things.
 
-1. Front-end (`/index.html`)
+1. Front-end (`/react`)
 
-   - A user-friendly application designed for customers to browse products and place orders.
-   - Provides a seamless ordering experience on a touchscreen or kiosk.
+   - A front-end application built using React and Tailwind CSS
+   - Able to connect with the WebSocket server
 
 2. API (`/server`)
 
    - Supplies product data to the front-end.
    - Handles incoming orders by storing them in the database.
    - Uses WebSockets to broadcast new orders to the dashboard in real time.
-
-3. Back-end (`/dashboard`)
-
-   - A dashboard accessible only to employees.
-   - Displays incoming orders and relevant statistics for order management.
 
 
 ## Author(s)
