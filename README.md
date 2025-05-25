@@ -30,6 +30,4 @@ Spotify Remote is a school project. For this project I had to build a remote con
 
 ## License
 
-This project is licensed under the [MIT](LICENSE.md)
-License - see the [LICENSE.md](LICENSE.md) file for
-details
+This project is licensed under the [MIT](LICENSE) License - see the [LICENSE](LICENSE) file for details.
