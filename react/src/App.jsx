@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { FaPlay, FaPause, FaForward, FaBackward } from "react-icons/fa";
 
-const App = () => {
+export default function App() {
   const [ws, setWs] = useState(null);
   const [status, setStatus] = useState("");
   const [title, setTitle] = useState("");
@@ -42,7 +42,7 @@ const App = () => {
 
   return (
     <div className="container mx-auto h-screen flex justify-center items-center">
-      <div className="bg-black w-[375px] h-[750px] rounded-[60px]">
+      <div className="bg-black w-[375px] h-[750px] rounded-4xl">
         <h1 className="text-center font-semibold text-white mt-12 text-lg">
           {time.toLocaleDateString("en-US", {
             weekday: "long",
@@ -62,7 +62,7 @@ const App = () => {
           alt="Album Cover"
           className="w-66 h-66 bg-cover mx-auto rounded-4xl my-14"
         />
-        <div className="bg-gray-700/55 mx-4 rounded-4xl pt-4 pb-6">
+        <div className="bg-gray-800/25 mx-4 rounded-4xl pt-4 pb-6">
           <div className="flex flex-col items-center">
             <h3 className="text-center text-white text-xl font-medium mt-4 w-62 overflow-x-auto whitespace-nowrap">
               {title || "No song playing"}
@@ -92,6 +92,4 @@ const App = () => {
       </div>
     </div>
   );
-};
-
-export default App;
+}
