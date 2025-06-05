@@ -10,7 +10,7 @@
 
 ## Overview
 
-Spotify Remote is a school project. For this project I had to build a remote controller using WebSockets. With this, you are able to control your Spotify app on your phone or laptop by using the controls visible on the website. Because of WebSockets, Spotify gets updated in real-time and you will be able to see album covers and artists among other things.
+For this project I built a remote controller using WebSockets. With this, you are able to control your Spotify app on your phone or laptop by using the controls visible on the website. Because of WebSockets, Spotify gets updated in real-time and you will be able to see album covers and artists among other things.
 
 1. Front-end (`/react`)
 
