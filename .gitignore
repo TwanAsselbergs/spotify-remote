@@ -1,3 +1,40 @@
-**/.env
-**/node_modules
-**/.DS_Store
+# Environment Variables
+.env
+.env.*
+!.env.example
+!.env.test
+
+# Dependencies
+node_modules/
+.bun/
+
+# Output
+dist/
+dist-ssr/
+build/
+.output
+.vercel
+.netlify
+.wrangler
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS System Files
+.DS_Store
+Thumbs.db
+
+# Editor Folders and Files
+.vscode/
+.idea/
+
+# Vite
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# Miscellaneous
+*.local
